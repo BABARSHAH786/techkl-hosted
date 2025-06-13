@@ -1,0 +1,37 @@
+User-agent: *
+
+Sitemap: https://codewithspeed.com/sitemap.xml
+
+
+# Allow access to essential resources
+Allow: /
+Allow: /_next/*
+Allow: /static/*
+Allow: /images/*  # Or your image directory
+Allow: /favicon.ico
+
+# Disallow access to development/staging areas (if applicable)
+# Disallow: /staging/*
+# Disallow: /dev/*
+
+# Disallow specific pages or routes (if needed)
+# Disallow: /private-page
+# Disallow: /old-page
+
+# Disallow potentially problematic directories
+Disallow: /node_modules/*
+Disallow: /build/*
+Disallow: /.next/* # Careful with this one in production! Usually fine to leave out.
+Disallow: /out/* # If you use the `next export` command.
+
+
+
+# Crawl-delay (optional, use cautiously)
+# Crawl-delay: 10  # Example: 10-second delay
+
+# Host (if needed for canonicalization)
+# Host: https://codewithspeed.com/
+
+# Clean-param (optional, if you have URL parameters you want to ignore)
+# Clean-param: utm_source /search  # Example: Remove utm_source from URLs in /search
+
